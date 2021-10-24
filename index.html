@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Word Counter</title>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Text Area</h1>
+            <textarea class="form-control" onkeyup="countwords()" placeholder="Type Anthing Here!" id="content"
+                cols="20" rows="8"></textarea>
+            <div class="col-mod-4">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Letters</th>
+                            <td><p type="text" id="cuntLtr">0</p></td>
+                        </tr>
+                        <tr>
+                            <th scope="col"> Words </th>
+                            <td><span class="help-block" id="Wordc">0</span></td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class=container">
+            <table class=" container table" id="table">
+                <thead class="thead-dark col-mod-4"></thead>
+                <tr>
+                    <th scope="col"> Sr#</th>
+                    <th scope="col">Letter</th>
+                    <th scope="col">Count</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
